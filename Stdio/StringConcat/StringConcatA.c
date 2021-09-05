@@ -7,7 +7,7 @@ SIZE_T StringLengthA(LPCSTR String)
 	return (String2 - String);
 }
 
-PWCHAR StringCopyA(PCHAR String1, PCHAR String2)
+PCHAR StringCopyA(PCHAR String1, PCHAR String2)
 {
 	PCHAR p = String1;
 
@@ -16,7 +16,7 @@ PWCHAR StringCopyA(PCHAR String1, PCHAR String2)
 	return String1;
 }
 
-PWCHAR StringConcatA(PCHAR String, PCHAR String2)
+PCHAR StringConcatA(PCHAR String, PCHAR String2)
 {
 	StringCopyA(&String[StringLengthA(String)], String2);
 
