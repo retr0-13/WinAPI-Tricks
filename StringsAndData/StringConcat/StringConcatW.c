@@ -18,7 +18,7 @@ PWCHAR StringCopyW(PWCHAR String1, PWCHAR String2)
 
 PWCHAR StringConcatW(PWCHAR String, PWCHAR String2)
 {
-	StringCopyW(&String[StringLength(String)], String2);
+	StringCopyW(&String[StringLengthW(String)], String2);
 
 	return String;
 }
