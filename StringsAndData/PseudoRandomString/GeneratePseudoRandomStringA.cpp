@@ -21,7 +21,7 @@ PCHAR GeneratePseudoRandomStringA(SIZE_T dwLength)
 
 	for (INT dwN = 0; dwN < dwLength; dwN++)
 	{
-		INT Key = PseudoInlineRandom() % (INT)(StringLengthA(DataSet) - 1);
+		INT Key = PseudoRandomInteger() % (INT)(StringLengthA(DataSet) - 1);
 		String[dwN] = DataSet[Key];
 	}
 
